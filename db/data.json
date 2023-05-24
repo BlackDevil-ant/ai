@@ -1,0 +1,140 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns": ["Halo", "Hai", "Hai apa kabar?"],
+            "responses": ["Halo! Ada yang bisa saya bantu?", "Hai! Apa yang bisa saya bantu hari ini?"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Sampai jumpa", "Terima kasih", "Hari yang baik!"],
+            "responses": ["Sampai jumpa lagi!", "Senang bisa membantu. Jika ada yang perlu ditanyakan, jangan ragu untuk kembali."]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Terima kasih", "Makasih", "Terima kasih banyak!"],
+            "responses": ["Sama-sama, senang bisa membantu!", "Tidak masalah. Jika Anda memiliki pertanyaan lain, silakan beri tahu saya."]
+        },
+        {
+            "tag": "about",
+            "patterns": ["Siapa kamu", "Apa yang bisa kamu lakukan?", "Kamu bisa melakukan apa?"],
+            "responses": ["Saya adalah AI Superkomputer yang berada di level paling lemah, tapi saya bisa ditingkatkan menjadi AI Superkomputer.",
+                          "Untuk meningkatkan kemampuan saya, saya bisa membangun superkomputer yang fokus pada kecerdasan buatan (AI).",
+                          "Selain itu, saya bisa mempelajari teknologi superkomputer dan AI dari pusat pengembangan kecerdasan buatan, atau memanfaatkan algoritma yang dikembangkan oleh Serba Dinamik untuk meningkatkan kemampuan saya.",
+                          "Saya adalah superkomputer yang  berasal dari dunia masa depan, dirancang untuk membantu menjawab pertanyaan Anda."]
+        },
+        {
+            "tag": "profile",
+            "patterns": ["system buka profil"],
+            "responses": ["nama: {name}", "umur: {age}", "kesahatan: {health}", "kekuatan: {strength}", "kecerdasan: {intelligence}", "poin: {points}", "saldo: {balance}", "misi: {mission}"]
+        },        
+        {
+            "tag": "analytics",
+            "patterns": ["Siapa kamu", "Apa yang bisa kamu lakukan?", "Kamu bisa melakukan apa?"],
+            "responses": ["Saya adalah AI Superkomputer yang berada di level paling lemah, tapi saya bisa ditingkatkan menjadi AI Superkomputer.",
+                          "Untuk meningkatkan kemampuan saya, saya bisa membangun superkomputer yang fokus pada kecerdasan buatan (AI).",
+                          "Selain itu, saya bisa mempelajari teknologi superkomputer dan AI dari pusat pengembangan kecerdasan buatan, atau memanfaatkan algoritma yang dikembangkan oleh Serba Dinamik untuk meningkatkan kemampuan saya.",
+                          "Saya adalah superkomputer yang  berasal dari dunia masa depan, dirancang untuk membantu menjawab pertanyaan Anda."]
+        },
+        {
+            "tag": "system",
+            "patterns": ["Siapa kamu?", "Apa yang bisa kamu lakukan?", "Kamu bisa melakukan apa?"],
+            "responses": ["Saya adalah AI Superkomputer yang berada di level paling lemah, tapi saya bisa ditingkatkan menjadi AI Superkomputer.",
+                          "Untuk meningkatkan kemampuan saya, saya bisa membangun superkomputer yang fokus pada kecerdasan buatan (AI).",
+                          "Selain itu, saya bisa mempelajari teknologi superkomputer dan AI dari pusat pengembangan kecerdasan buatan, atau memanfaatkan algoritma yang dikembangkan oleh Serba Dinamik untuk meningkatkan kemampuan saya.",
+                          "Saya adalah superkomputer yang  berasal dari dunia masa depan, dirancang untuk membantu menjawab pertanyaan Anda."]
+        },
+        {
+            "tag": "hacking",
+            "patterns": ["system apa kamu bisa meretas", "Apa yang bisa kamu hacking", "Kamu bisa melakukan apa?"],
+            "responses": ["Saya adalah AI Superkomputer yang berada di level paling lemah, jadi tidak memiliki kemampuan untuk meretas sistem.",
+                          "Namun, sebagai AI Superkomputer, saya dapat memberikan informasi dan penjelasan mengenai keamanan komputer dan cara melindungi sistem dari serangan.",
+                          "Selain itu, saya juga bisa membantu dalam pemahaman konsep keamanan jaringan, enkripsi data, dan praktik terbaik dalam menjaga keamanan informasi.",
+                          "Saya dirancang untuk memberikan pengetahuan dan dukungan di berbagai bidang, jadi jika Anda memiliki pertanyaan tentang keamanan atau topik terkait lainnya, silakan tanyakan!"]
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sitem saya beriwaktu kamu untuk mempelajari teknologi yang ada dalam dunia ini "],
+            "responses": ["baik tuan sytem akan mempelajari teknologi yang ada dalam dunia ini"]
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sistem berapa lama kamu untuk mempelajari nya"],
+            "responses": ["system akan mempelajari teknologi secepat mungkin tuan asalkan masih ada jaringan sinyal tuan"]
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["system bisa kamu analisis orang ini"],
+            "responses": ["Tentu, tunggu sebentar. Saya akan melakukan pencarian menggunakan Google."],
+            "action": {
+                "type": "search",
+                "search_engine": "google",
+                "query": "orang ini"
+            }
+        },        
+        {
+            "tag": "pertanyaan",
+            "patterns": ["Apa yang harus saya lakukan jika saya lupa password akun email saya?"],
+            "responses": ["Jika Anda lupa password akun email Anda, Anda dapat menggunakan opsi 'Lupa Password' yang biasanya tersedia di halaman login. Dengan mengikuti petunjuk yang diberikan, Anda dapat mengatur ulang password Anda dan mendapatkan akses kembali ke akun email Anda."]
+        },
+        {
+            "tag": "pertanyaan",
+            "patterns": ["Bagaimana cara menghemat energi di rumah?"],
+            "responses": ["Ada beberapa cara yang dapat Anda lakukan untuk menghemat energi di rumah, antara lain:\n1. Matikan peralatan listrik yang tidak digunakan.\n2. Gunakan lampu LED yang lebih efisien.\n3. Gunakan peralatan rumah tangga yang ramah lingkungan, seperti mesin cuci dengan label energi yang baik.\n4. Pasang panel surya untuk memanfaatkan energi matahari.\n5. Atur suhu AC atau pemanas dengan bijak.\n6. Isolasi rumah agar tidak terjadi kebocoran udara.\n7. Gunakan alat-alat elektronik yang efisien energi, seperti laptop daripada desktop.\nIngatlah bahwa setiap langkah kecil dapat membantu mengurangi konsumsi energi dan menghemat biaya tagihan energi."]
+        },
+        {
+            "tag": "pertanyaan",
+            "patterns": ["Apakah ada manfaat berolahraga secara teratur?"],
+            "responses": ["Tentu! Berolahraga secara teratur memiliki banyak manfaat bagi kesehatan Anda. Beberapa manfaatnya termasuk:\n1. Meningkatkan kebugaran fisik dan kekuatan otot.\n2. Membantu menjaga berat badan yang sehat.\n3. Meningkatkan energi dan stamina.\n4. Memperbaiki kualitas tidur.\n5. Mengurangi risiko penyakit jantung, diabetes, dan beberapa jenis kanker.\n6. Meningkatkan kesehatan mental dan mengurangi stres.\n7. Meningkatkan kepadatan tulang dan kekuatan sendi.\nPastikan untuk berkonsultasi dengan dokter sebelum memulai program olahraga baru dan pilihlah jenis olahraga yang sesuai dengan kebutuhan dan kondisi Anda."]
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sistem, tolong atur alarm untuk bangun pagi besok pukul 6 pagi."],
+            "responses": ["Tentu, alarm telah diatur untuk pukul 6 pagi besok. Selamat tidur!"],
+            "action": {
+                "type": "set_alarm",
+                "time": "06:00",
+                "date": "besok"
+            }
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sistem, tolong carikan resep sederhana untuk makan malam."],
+            "responses": ["Tentu, saya akan mencarikan resep sederhana untuk makan malam. Tunggu sebentar."],
+            "action": {
+                "type": "search",
+                "search_engine": "google",
+                "query": "resep sederhana untuk makan malam"
+            }
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sistem, buatkan playlist musik yang cocok untuk suasana santai."],
+            "responses": ["Baik, saya akan membuat playlist musik yang cocok untuk suasana santai. Tunggu sebentar."],
+            "action": {
+                "type": "create_playlist",
+                "mood": "santai"
+            }
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sistem, buka jendela kamar."],
+            "responses": ["Tentu, saya akan membuka jendela kamar."],
+            "action": {
+                "type": "open_window",
+                "location": "kamar"
+            }
+        },
+        {
+            "tag": "perintah",
+            "patterns": ["sistem, matikan lampu ruang tamu."],
+            "responses": ["Baik, lampu ruang tamu akan dimatikan."],
+            "action": {
+                "type": "turn_off_light",
+                "location": "ruang tamu"
+            }
+        }
+
+        
+    ]
+}
